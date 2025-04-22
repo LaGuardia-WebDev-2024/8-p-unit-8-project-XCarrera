@@ -12,7 +12,10 @@ setup = function() {
     drawBubble();
     drawBubble();
     
-    
+    drawCrab();
+    drawCrab();
+    drawCrab();
+      
     drawSquid(300,178);
     drawSquid(1200,500);
     
@@ -38,7 +41,18 @@ var bubble = "🐟";
 
 fill(112, 75, 58);
 textSize(36);
-text(bubble,textX,textY)
+text(bubble,textX,textY);
+}
+
+var drawCrab = function(){
+
+var textX = random(50,900);
+var textY = random(50,900);
+var crab = "🦀";
+
+fill(112, 75, 58);
+textSize(23);
+text(crab,textX,textY);
 }
 
 
